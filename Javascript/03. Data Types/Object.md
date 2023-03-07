@@ -135,5 +135,24 @@ function Car(type, model, year, color) {
 Car.prototype.country = "Japan";
 ```
 
-## Build-in Objects
-how 
+## Built-in Objects
+
+
+The term "global objects" (or standard built-in objects) here is not to be confused with **global object**. Here "global objects" refer to objects in the **global scope**.
+
+The **global objects** itselft can be accessed using the `this` operator in the global scope. In fact, the global scope consists of the properties of the global object, including inherited properties, if any.
+
+## Standard objects by category
+
+### Value properties 
+
+These global properties return a simple value. They have no properties or methods.
+
+- `globalThis`
+- `Infinity`
+- `Nan`
+- `undefined`
+
+### Function properties
+
+These global functions which are called globally, rather than on an object directly return their results to the caller.
